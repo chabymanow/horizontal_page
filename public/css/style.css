@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5em;
+    padding-left: 5em;
+}
+
+.content h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.content h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.first{
+    background: url('/images/back01.jpg') no-repeat center center, rgba(0, 0, 0, .7);
+    background-blend-mode: darken ;
+    background-size: cover;
+    position: relative;
+}
+
+.second{
+    background: rgb(7, 36, 61);
+    color: #FAFAFA;
+}
+
+.third{
+    background-color: #4ff4ef;
+}
+
+.fourth{
+    background-color: #f0a206;
+}
+
+.inner_wrap {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+
+.out_wrap {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  ::-webkit-scrollbar {
+    display:none;
+  }
+
+  .main_menu{
+      width: 100%;
+  }
+
+  .menu_list{
+    text-decoration: none;
+  }
+
+  .menu_item, .menu_item a{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    font-size: 4rem;
+    color: #d8d2d2;
+    font-family: 'Lemonada', cursive;
+    cursor: pointer;
+    text-decoration: none;
+    /* font-weight: 900; */
+    text-shadow:
+    -5px -5px 8px #d8d2d2,
+    5px -5px 8px #d8d2d2,
+    -5px 5px 8px #d8d2d2,
+    5px 5px 8px #d8d2d2;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+    }
+
+    /* .menu_item:hover{
+        letter-spacing: .3em;
+        font-weight: 100;
+    } */
+
+    .menu_item:hover, .menu_item a:hover{
+        color: #d8d2d2;
+        text-shadow: none;
+        letter-spacing: .3em;
+        /* font-weight: 100; */
+        cursor: pointer;
+    }
